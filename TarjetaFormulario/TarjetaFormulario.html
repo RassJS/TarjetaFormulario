@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/f2dd74f9f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="EstilosTarjeta.css">
+  </head>
+
+  <body>
+  		<div class="contenedor">
+
+  			<!-- Tarjeta -->
+  			<section class="tarjeta" id="tarjeta">
+  				<div class="delantera">
+  					<div class="logo-marca" id="logo-marca">
+  						<!--<img src="visa.png" alt="visa">-->
+  					</div>
+  					<img src="chip-tarjeta.png" class="chip" alt="chip">
+  					<div class="datos">
+  						<div class="grupo" id="numero">
+  							<p class="label">Numero de tarjeta</p>
+  							<p class="numero">#### #### #### ####</p>
+  						</div>
+  						<div class="flexbox">
+  							<div class="grupo" id="nombre">
+  								<p class="label">Nombre de la tarjeta</p>
+  								<p class="nombre">Jhon Doe</p>
+  							</div>
+
+  							<div class="grupo" id="expiracion">
+  								<p class="label">Expiracion</p>
+  								<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+          <!-- Tarjeta trasera -->
+  				<div class="trasera">
+  					<div class="barra-magnetica"></div>
+  					<div class="datos">
+  						<div class="grupo" id="firma">
+  							<p class="label">Firma</p>
+  							<div class="firma"><p></p></div>
+  						</div>
+  						<div class="grupo" id="ccv">
+  							<p class="label">CCV</p>
+  							<p class="ccv"></p>
+  						</div>
+  					</div>
+  					<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+  					<a href="#" class="link-banco">www.santanderrio.com.ar</a>
+  				</div>
+  			</section>
+  			<!-- Contenedor boton para abrir formulario-->
+  			<div class="contenedor-btn">
+  				<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+  					<i class="fas fa-plus"></i>
+  				</button>
+  			</div>
+  			<!--Formulario-->
+  			<form action="" class="formulario-tarjeta" id="formulario-tarjeta">
+  				<div class="grupo">
+  					<label for="inputNumero">Numero de tarjeta</label>
+  					<input type="text" id="inputNumero" max-length="19" autocomplete="off">
+  				</div>
+  				<div class="grupo">
+  					<label for="inputNombre">Nombre</label>
+  					<input type="text" id="inputNombre" max-length="19" autocomplete="off">
+  				</div>
+  				<div class="flexbox">
+  					<div class="grupo expira">
+  						<label for="selectMes">Expiracion</label>
+  						<div class="flexbox">
+  							<div class="grupo-select">
+  								<select name="mes" id="selectMes">
+  									<option disabled selected>Mes</option>
+  								</select>
+  								<i class="fas fa-angle-down"></i>
+  							</div>
+  							<div class="grupo-select">
+  								<select name="year" id="selectYear">
+  									<option disabled selected>Año</option>
+  								</select>
+  								<i class="fas fa-angle-down"></i>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="grupo ccv">
+  						<label for="inputCCV">CCV</label>
+  						<input type="text" id="inputCCV"  maxlength="3">
+  					</div>
+  				</div>
+  				<button type="submit" class="btn-enviar">Enviar</button>
+  			</form>
+  		</div>
+
+  		<script src="TarjetaFormulario.js"></script>
+  </body>
+</html>
